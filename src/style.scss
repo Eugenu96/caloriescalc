@@ -1,0 +1,35 @@
+@import './reset.scss';
+@import "./variables.scss";
+
+:root {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.5;
+    font-size: 1em;
+    font-weight: $default-font-weight;
+    text-transform: uppercase;
+    color: $default-color;
+    background-color: $grey;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    background-color: $attention-color;
+    width: $wrapper-max-width;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    width: 49%;
+    background-color: green;
+}
