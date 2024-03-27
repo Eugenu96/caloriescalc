@@ -4,8 +4,9 @@
 :root {
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 1.5;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: $default-font-weight;
+    letter-spacing: -1;
     text-transform: uppercase;
     color: $default-color;
     background-color: $grey;
@@ -17,19 +18,97 @@
 }
 
 .wrapper {
-    background-color: $attention-color;
     width: $wrapper-max-width;
     margin: 0 auto;
+    // padding: 0 5px;
 }
 
 .container {
+    background-color: $white;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 0px 5px;
 }
 
 .col {
     width: 49%;
-    background-color: green;
+    // background-color: green;
+}
+
+.button {
+    display: block;
+    border: 2px solid #333;
+    color: #333;
+    text-align: center;
+    padding: 2px 6px;
+    margin: 2px 0px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 0.5px #333;
+}
+
+.button-submit {
+    width: 50%;
+    margin: 5px auto;
+    background-color: aquamarine;
+}
+
+.input-gr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-gr_item {
+    width: 25%;
+}
+
+.input {
+    margin: 3px 0px;
+    border-color: #F0F0F0;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 3px 3px 1px #F0F0F0;
+    font-size: .85em;
+}
+
+.textarea-input {
+    width: 98%;
+    resize: none;
+}
+
+.radio-button {
+    width: 33%;
+    padding: 3px;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: repeating-linear-gradient(-45deg,
+            transparent,
+            transparent 5px,
+            #333 5px,
+            #333 10px);
+    cursor: pointer;
+}
+
+.radio-button-active {
+    background-image: repeating-linear-gradient(-45deg,
+            transparent,
+            transparent 5px,
+            aquamarine 5px,
+            aquamarine 10px);
+}
+
+.radio-button_background {
+    background-color: #FFF;
+    width: 100%;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }

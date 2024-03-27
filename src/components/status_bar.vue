@@ -41,7 +41,8 @@ import { ref } from 'vue';
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: $default_color;
+    background-color: $white;
+    color: $default-color;
 }
 
 .status-bar_section {
@@ -50,7 +51,7 @@ import { ref } from 'vue';
 }
 
 .status-bar_section_title {
-    color: $grey;
+    color: $default-color;
     margin-bottom: 2px;
 }
 

@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Navigation from './components/Navigation.vue'
 import Status_bar from './components/status_bar.vue'
+import Products from './components/Products.vue'
 </script>
 
 <template>
@@ -16,8 +17,12 @@ import Status_bar from './components/status_bar.vue'
         <Status_bar />
       </div>
       <div class="container">
-        <div class="col">col1</div>
-        <div class="col">col2</div>
+        <div class="col">
+          <Products />
+        </div>
+        <div class="col">
+          <h1 class="col-header">Diet</h1>
+        </div>
       </div>
     </main>
     <footer></footer>
